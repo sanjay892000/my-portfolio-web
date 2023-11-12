@@ -145,6 +145,7 @@ a {
     font-size: large;
     background-color: transparent;
     color: white;
+    cursor: pointer;
 }
 
 .stroke-heading {
