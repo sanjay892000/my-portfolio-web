@@ -145,6 +145,7 @@ a {
     background-color: transparent;
     color: white;
     cursor: pointer;
+<<<<<<< HEAD
 }
 @media screen and (max-width:640px) {
     .right button {
@@ -152,6 +153,8 @@ a {
     width: 120px;
     font-size: medium;
     }
+=======
+>>>>>>> b4c41ea7bac6e06f326548a232288876a6e65f27
 }
 .stroke-heading {
     position: relative;
