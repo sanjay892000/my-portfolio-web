@@ -7,7 +7,8 @@
     <title>Sanjay's Portfolio Web</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/4a04fb0e26.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    </head>
 
 <body>
     <main class="main-tag">
@@ -28,14 +29,14 @@
                 <h4>I'm</h4>
                 <h1>Sanjay Kumar Singh</h1>
                 <h6>Front-End Developer</h6>
-                <a href="Resume M.pdf" download="resume/5685/nbjierri/-sanjay"><button class="download-btn">Download
+                <a id="download-resume" href="Resume M.pdf" download="resume/5685/nbjierri/-sanjay"><button class="download-btn" for="download-resume">Download
                         CV</button></a>
             </div>
         </div>
 
-        <div class="stroke-heading-top">
+        <div id="about-head" class="stroke-heading-top">
             <h1 class="about-heading">ABOUT</h1>
-            <h3>ABOUT ME</h3>
+            <h3 id="about-subhead">ABOUT ME</h3>
         </div>
 
         <div class="container">
@@ -71,7 +72,6 @@
                         </div>
                     </div>
                     <div class="mybtnc">
-                        <button class="table-btn">Read More</button>
                         <button class="table-btn">Hire Me</button>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
                 <button class="table-btn">Send Massage</button>
             </div>
         </div>
-    </main>
+
 
     <footer>
         <div class="myfooter">
@@ -367,7 +367,11 @@
             </div>
         </div>
     </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
-</body>
+   </body>
 
 </html>
