@@ -205,6 +205,7 @@ a {
 }
 
 .portfolio {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -223,6 +224,9 @@ a {
 
     .colonm1,
     .colonm2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 90vw;
     }
 
@@ -238,6 +242,12 @@ a {
         justify-content: center;
         align-items: center;
     }
+    .colonm1 img{
+        height: 100%;
+        width: 90vw;
+        object-fit: cover;
+        overflow: hidden;
+    }
 
 }
 
@@ -247,7 +257,7 @@ a {
 
 .colonm1 {
     height: 100%;
-    width: 34vw;
+    width: 34%;
     display: flex;
     justify-content: center;
     /*  padding: 0px 20px;
@@ -259,9 +269,10 @@ a {
     height: 40vw;
     width: 32vw; */
     padding: 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     opacity: 0.9;
     overflow: hidden;
+    object-fit: cover;
 
 }
 
