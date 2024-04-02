@@ -758,19 +758,6 @@ p {
     outline: none;
 }
 
-@media screen and (max-width:640px) {
-    .mail-name {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mail-name input {
-        display: flex;
-        flex-direction: column;
-        width: 54vw;
-    }
-}
-
 .subject input {
     height: 40px;
     width: 54vw;
@@ -797,6 +784,29 @@ p {
     padding-top: 10px;
     outline: none;
     font-size: 1rem;
+}
+
+@media screen and (max-width:640px) {
+    .mail-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mail-name input {
+        display: flex;
+        flex-direction: column;
+        border-radius: 3px;
+        width: 75vw;
+    }
+
+    .subject input{
+        border-radius: 3px;
+        width: 75vw;
+    }
+    .massage  textarea {
+        border-radius: 3px;
+        width: 75vw;
+    }
 }
 
 
