@@ -717,14 +717,15 @@ p {
 
 @media screen and (max-width:460px) {
     .port-full-page {
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     }
 
     .myport img {
         width: 80vw;
         height: auto;
+        margin-left: 20%;
     }
 }
 
