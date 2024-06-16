@@ -55,6 +55,9 @@ body {
     height: 100px;
     width: 100px;
 }
+#download-resume{
+    z-index: 100;
+}
 
 .photo-pro {
     height: 100vh;

@@ -46,7 +46,7 @@ timeline.from(".left img", {
 })
 
 timeline.from(".right h4 , .right h1 , .right h6 , .right a", {
-  x: 800,
+  x: 900,
   duration: 0.3,
   stagger: 0.2
 
