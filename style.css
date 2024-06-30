@@ -146,9 +146,11 @@ a {
     }
 
     .full-page {
-        margin-top: 80px;
+        margin: 40px 0px;
         flex-direction: column;
         align-items: center;
+    }.container {
+        margin: 40px 0px;
     }
 
 }
@@ -211,7 +213,7 @@ a {
 .stroke-heading-top {
     position: relative;
     text-align: center;
-    margin: 7% 0%;
+    margin-top: 50px;
 }
 
 .stroke-heading-top h3 {
@@ -860,6 +862,7 @@ p {
         border-radius: 3px;
         width: 75vw;
     }
+    
 }
 
 
