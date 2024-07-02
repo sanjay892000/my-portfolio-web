@@ -53,4 +53,23 @@ timeline.from(".right h4 , .right h1 , .right h6 , .right a", {
 })
 
 
+let mynote = document.getElementById('mynotebook');
+let portfolio = document.getElementById('portfolio');
+let ecommerce = document.getElementById('ecommerce');
+let newsapp = document.getElementById('newaapp');
 
+mynote.addEventListener('click', () => {
+  window.location.href = 'https://mynoteb00kapp.netlify.app/';
+})
+
+portfolio.addEventListener('click', () => {
+  window.location.href = 'https://sanjayksingh.netlify.app/';
+})
+
+ecommerce.addEventListener('click', () => {
+  window.location.href = 'https://prabhatcenter-react.netlify.app/';
+})
+
+newsapp.addEventListener('click', () => {
+  window.location.href = 'https://prabhatnewsapp.netlify.app/';
+})

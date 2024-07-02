@@ -560,6 +560,7 @@ p {
 .project img {
     width: 21vw;
     height: 10vw;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1000px) {
