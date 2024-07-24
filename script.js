@@ -56,7 +56,14 @@ timeline.from(".right h4 , .right h1 , .right h6 , .right a", {
 let mynote = document.getElementById('mynotebook');
 let portfolio = document.getElementById('portfolio');
 let ecommerce = document.getElementById('ecommerce');
-let newsapp = document.getElementById('newaapp');
+let newsapp = document.getElementById('newsapp');
+
+let inputname = document.getElementById('inputname');
+let inputemail = document.getElementById('inputemail');
+let inputsubject = document.getElementById('inputsubject');
+let hireMe = document.getElementById('hireMe');
+let massage = document.getElementById('massage');
+
 
 mynote.addEventListener('click', () => {
   window.location.href = 'https://mynoteb00kapp.netlify.app/';
@@ -72,4 +79,8 @@ ecommerce.addEventListener('click', () => {
 
 newsapp.addEventListener('click', () => {
   window.location.href = 'https://prabhatnewsapp.netlify.app/';
+})
+
+hireMe.addEventListener('click', () => {
+  window.location.href = 'mailto:sanjay892000@gmail.com?subject=Subject&body=Body%20Text/';
 })
