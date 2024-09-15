@@ -82,5 +82,5 @@ newsapp.addEventListener('click', () => {
 })
 
 hireMe.addEventListener('click', () => {
-  window.location.href = 'mailto:sanjay892000@gmail.com?subject=Subject&body=Body%20Text/';
+  window.location.href = 'mailto:sanjay892000@gmail.com';
 })
