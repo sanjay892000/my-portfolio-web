@@ -81,11 +81,11 @@ router.post('/massage', [
    <body>
     <div class="container">
         <div class="header">
-            <h2>Welcome Sanjay's Portfolio</h2>
+            <h2>Welcome to Sanjay's Portfolio</h2>
         </div>
         <div class="content">
             <p><strong class="cong">Hii! </strong>${name},</p>
-            <p><strong>Your massage is</strong></p>
+            <p><strong>Your details is:</strong></p>
             <p>Name: ${name}</p>
             <p>Email: ${email}</p>
             <p>Subject: ${subject}</p>
