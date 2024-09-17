@@ -90,7 +90,7 @@ router.post('/massage', [
             <p>Email: ${email}</p>
             <p>Subject: ${subject}</p>
             <p>Massage: ${massage}</p>
-            <>Thank ${name}<span style="font-size:15px;color:red;">&hearts;</span>
+            <p>Thank ${name}<span style="font-size:15px;color:red;">&hearts;</span>
 <br>
             for Given your Precious time to visit my Portfolio</p>
             <p>Best regards,</p>
