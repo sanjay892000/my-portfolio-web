@@ -104,11 +104,11 @@ let addDataFun = async (URLs) => {
   });
   const data = await response.json();
   if (data) {
+    document.getElementById('inputname').value = " ";
+    document.getElementById('inputemail').value = " ";
+    document.getElementById('inputsubject').value = " ";
+    document.getElementById('massage').value = " ";
     alert('Form submitted!');
-    name = " "
-    email = " "
-    subject =" "
-    massage = " "
   }
   console.log(data);
 }
