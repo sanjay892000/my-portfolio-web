@@ -801,7 +801,7 @@ p {
 }
 
 .mail-name input {
-    height: 40px;
+    height: 50px;
     width: 26vw;
     border-radius: 50px;
     margin: 10px;
@@ -814,7 +814,7 @@ p {
 }
 
 .subject input {
-    height: 40px;
+    height: 50px;
     width: 54vw;
     border-radius: 50px;
     margin: 10px;

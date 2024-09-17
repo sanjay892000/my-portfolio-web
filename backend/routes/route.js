@@ -28,11 +28,11 @@ router.post('/massage', [
         const saveData = await data.save();
         res.json(saveData);
 
-        if (saveForm) {
+        if (saveData) {
             const mailOptions = {
                 from: "sanjay892000@gmail.com",
                 to: email,
-                subject: `Hello! ${name}, thank you for contect us`,
+                subject: `Hello! ${name},Thanku&#9825; For given your Precious time  `,
                 html: `<!DOCTYPE html>
     <html>
     <head>
@@ -90,7 +90,8 @@ router.post('/massage', [
             <p>Email: ${email}</p>
             <p>Subject: ${subject}</p>
             <p>Massage: ${massage}</p>
-            <p>Thank you for contect us</p>
+            <p>Thank ${name}&#9825;<br>
+            for Given your Precious time to visit my Portfolio</p>
             <p>Best regards,</p>
             <p>Sanjay Singh</p>
         </div>

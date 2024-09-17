@@ -5,13 +5,13 @@ const cors = require('cors');
 const port = 5000;
 const app = express()
 
-/* app.use(cors({
+app.use(cors({
   origin:'*',
   methods: "GET,POST,PUT,DELETE",
   headers: "Content-Type, auth-token",
   credentials: true
 }))
- */
+
 app.use(express.json());
 
 //call the database through client()

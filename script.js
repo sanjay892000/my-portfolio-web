@@ -31,10 +31,10 @@ ScrollTrigger.refresh();
 
 var timeline = gsap.timeline();
 timeline.to(".myloading , .myloading img", {
-  
-  opacity:0,
-  duration:1.5,
-  delay:0.5
+
+  opacity: 0,
+  duration: 1.5,
+  delay: 0.5
 })
 
 
@@ -57,12 +57,7 @@ let mynote = document.getElementById('mynotebook');
 let portfolio = document.getElementById('portfolio');
 let ecommerce = document.getElementById('ecommerce');
 let newsapp = document.getElementById('newsapp');
-
-let inputname = document.getElementById('inputname');
-let inputemail = document.getElementById('inputemail');
-let inputsubject = document.getElementById('inputsubject');
 let hireMe = document.getElementById('hireMe');
-let massage = document.getElementById('massage');
 
 
 mynote.addEventListener('click', () => {
@@ -84,3 +79,28 @@ newsapp.addEventListener('click', () => {
 hireMe.addEventListener('click', () => {
   window.location.href = 'mailto:sanjay892000@gmail.com';
 })
+
+let form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let dataURL = "http://localhost:5000/api/sanjay/massage"
+    addDataFun(dataURL);
+
+})
+
+let addDataFun = async(URLs)=>{
+  let name = document.getElementById('inputname').value;
+  let email = document.getElementById('inputemail').value;
+  let subject = document.getElementById('inputsubject').value;
+  let massage = document.getElementById('massage').value;
+   let response = await fetch(URLs,{
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ name: name, email:email, subject: subject, massage: massage}),
+  });
+  const data = await response.json();
+  console.log(data);
+}
