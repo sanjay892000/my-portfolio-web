@@ -105,10 +105,10 @@ let addDataFun = async (URLs) => {
   const data = await response.json();
   if (data) {
     alert('Form submitted!');
-    name = " ",
-      email = " ",
-      subject =" ",
-      massage = " "
+    name = " "
+    email = " "
+    subject =" "
+    massage = " "
   }
   console.log(data);
 }

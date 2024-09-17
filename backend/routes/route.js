@@ -32,7 +32,7 @@ router.post('/massage', [
             const mailOptions = {
                 from: "sanjay892000@gmail.com",
                 to: email,
-                subject: `Hello! ${name},Thanku&#9825; For given your Precious time  `,
+                subject: `Hello! ${name},Thank you For given your Precious time  `,
                 html: `<!DOCTYPE html>
     <html>
     <head>
@@ -81,7 +81,7 @@ router.post('/massage', [
    <body>
     <div class="container">
         <div class="header">
-            <h1>Sanjay Singh</h1>
+            <h2>Welcome Sanjay's Portfolio</h2>
         </div>
         <div class="content">
             <p><strong class="cong">Hii! </strong>${name},</p>
@@ -90,7 +90,8 @@ router.post('/massage', [
             <p>Email: ${email}</p>
             <p>Subject: ${subject}</p>
             <p>Massage: ${massage}</p>
-            <p>Thank ${name}&#9825;<br>
+            <>Thank ${name}<span style="font-size:15px;color:red;">&hearts;</span>
+<br>
             for Given your Precious time to visit my Portfolio</p>
             <p>Best regards,</p>
             <p>Sanjay Singh</p>
