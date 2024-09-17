@@ -84,23 +84,31 @@ let form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  let dataURL = "http://localhost:5000/api/sanjay/massage"
-    addDataFun(dataURL);
+  /*   let dataURL = "http://localhost:5000/api/sanjay/massage" */
+  let dataURL = "https://my-portfolio-web-3083.onrender.com"
+  addDataFun(dataURL);
 
 })
 
-let addDataFun = async(URLs)=>{
+let addDataFun = async (URLs) => {
   let name = document.getElementById('inputname').value;
   let email = document.getElementById('inputemail').value;
   let subject = document.getElementById('inputsubject').value;
   let massage = document.getElementById('massage').value;
-   let response = await fetch(URLs,{
+  let response = await fetch(`${URLs}/api/sanjay/massage`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ name: name, email:email, subject: subject, massage: massage}),
+    body: JSON.stringify({ name: name, email: email, subject: subject, massage: massage }),
   });
   const data = await response.json();
+  if (data) {
+    alert('Form submitted!');
+    name = " ",
+      email = " ",
+      subject =" ",
+      massage = " "
+  }
   console.log(data);
 }
