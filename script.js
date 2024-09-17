@@ -87,6 +87,10 @@ form.addEventListener('submit', (e) => {
   /*   let dataURL = "http://localhost:5000/api/sanjay/massage" */
   let dataURL = "https://my-portfolio-web-3083.onrender.com"
   addDataFun(dataURL);
+  document.getElementById('inputname').value=" ";
+  document.getElementById('inputemail').value=" ";
+  document.getElementById('inputsubject').value=" ";
+  document.getElementById('massage').value=" ";
 
 })
 
@@ -106,8 +110,4 @@ let addDataFun = async (URLs) => {
   if (data) {
     alert('Form submitted!');
   }
-  name = " "
-  email = " "
-  subject =" "
-  massage = " "
 }
