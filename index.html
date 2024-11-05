@@ -11,19 +11,22 @@
 </head>
 
 <body>
+    <header class="myheader">
+            <!-- <img src="myimage.png" alt="Loading..."> -->
+            <li class="mynav"> <a href="/">Home</a></li>
+            <li class="mynav"> <a href="#about-head">Abouts</a></li>
+            <li class="mynav"> <a href="#education">Experiences</a></li>
+            <li class="mynav"> <a href="#skills-nav">Skills</a></li>
+            <li class="mynav"> <a href="#">Projects</a></li>
+            <li class="mynav"> <a href="#">services</a></li>
+            <li class="mynav"> <a href="#">Portfolios</a></li>
+            <li class="mynav"> <a href="#">Contacts</a></li>
+    </header>
     <main class="main-tag">
-        <header class="myheader">
-            <nav class="navbar">
-                <!-- <img src="myimage.png" alt="Loading..."> -->
-                <div class="mynav">Home</div>
-                <div class="mynav">Projects</div>
-                <div class="mynav">Blog</div>
-            </nav>
-        </header>
         <div class="myloading">
             <img src="./img/spinner.gif" alt="">
         </div>
-        <div class="photo-pro">
+        <div class="photo-pro" id="home-nav">
             <div class="left">
                 <img id="left-img" src="./img/myimg.jpeg" alt="Loading...">
             </div>
@@ -32,9 +35,7 @@
                 <h4>I'm</h4>
                 <h1>Sanjay Kumar Singh</h1>
                 <h6>MERN-Stack Developer</h6>
-                <a id="download-resume" href="./mernStack.pdf" download="resume"><button
-                        class="download-btn" for="download-resume">Download
-                        CV</button></a>
+                <a id="download-resume" class="download-btn" href="./mernStack.pdf" download="resume">Download CV</a>
             </div>
         </div>
 
@@ -46,15 +47,17 @@
         <div class="container">
             <div class="top-webdevel">
                 <h1>MERN-Stack Developer</h1>
-                    <p>I am Sanjay Kumar Singh(MERN-Stack Developer), from Mirzapur, Uttar Pradesh. I have done Bachelor of Technology in Computer Science and Engineering, Faculty of Engineering &
-                        Technology,
-                        University of Lucknow, Lucknow in 2024. Moreover, I am proficient as well as a capable and confident person.
-                        I
-                        have
-                        learned to be very hard-working as well as passionate about my career from the very core.
-                        Since
-                        my
-                        childhood, I have always been trained to focus on my passion.</p>
+                <p>I am Sanjay Kumar Singh(MERN-Stack Developer), from Mirzapur, Uttar Pradesh. I have done Bachelor of
+                    Technology in Computer Science and Engineering, Faculty of Engineering &
+                    Technology,
+                    University of Lucknow, Lucknow in 2024. Moreover, I am proficient as well as a capable and confident
+                    person.
+                    I
+                    have
+                    learned to be very hard-working as well as passionate about my career from the very core.
+                    Since
+                    my
+                    childhood, I have always been trained to focus on my passion.</p>
             </div>
             <div class="portfolio">
                 <div class="colonm1">
@@ -83,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="stroke-heading-large">
+        <div class="stroke-heading-large" id="education">
             <h1 class="quality-heading">QUALITY</h1>
             <h3>EDUCATION & EXPERIENCE</h3>
         </div>
@@ -118,7 +121,9 @@
                 <div class="work-exp">
                     <h3 class="text-sub-heading">Job | Currently(site)</h3>
                     <h4>Hanumant Technology(MERN-Stack Development)</h4>
-                    <p>I am a skilled MERN-stack developer with experience in developing scalable web applications. Currently working at Hanumat Technology, I specialize in building dynamic front-end interfaces with React and efficient back-end services with Node.js, Express, and MongoDB.</p>
+                    <p>I am a skilled MERN-stack developer with experience in developing scalable web applications.
+                        Currently working at Hanumat Technology, I specialize in building dynamic front-end interfaces
+                        with React and efficient back-end services with Node.js, Express, and MongoDB.</p>
                 </div>
                 <div class="work-exp">
                     <h3 class="text-sub-heading">Internship | 1 Month(Remote)</h3>
@@ -136,7 +141,7 @@
             </div>
         </div>
 
-        <div class="stroke-heading-top">
+        <div class="stroke-heading-top" id="skills-nav">
             <h1 class="skills-heading">SKILLS</h1>
             <h3>MY SKILLS</h3>
         </div>
@@ -244,7 +249,8 @@
                     <img id="mynotebook" src="./img/mynotebook.png" alt="Loading">
                     <div class="project-details">
                         <h5>My Notebook</h5>
-                        <p>This web is based on MERN Stack.This is an online web platform where you can create, edit, upload, delete your notes/information privately and securely without any disturbancee.</p>
+                        <p>This web is based on MERN Stack.This is an online web platform where you can create, edit,
+                            upload, delete your notes/information privately and securely without any disturbancee.</p>
                     </div>
                 </div>
 
@@ -262,7 +268,9 @@
                     <img id="ecommerce" src="./img/ecom.png" alt="Loading">
                     <div class="project-details">
                         <h5>Prabhat Center (E-commerce Website)</h5>
-                        <p>This project aims to develop a robust e-commerce platform that enhances user experience through seamless navigation, secure transactions, and a wide range of products. Our goal is to provide an accessible and efficient online shopping experience for customers.</p>
+                        <p>This project aims to develop a robust e-commerce platform that enhances user experience
+                            through seamless navigation, secure transactions, and a wide range of products. Our goal is
+                            to provide an accessible and efficient online shopping experience for customers.</p>
                     </div>
                 </div>
 
@@ -270,7 +278,8 @@
                     <img id="newsapp" src="./img/newsapp.png" alt="Loading">
                     <div class="project-details">
                         <h5>Prabhat News App</h5>
-                        <p>This project delivers timely and comprehensive news coverage, offering readers up-to-date information on global and local events with ease of access and reliable reporting.</p>
+                        <p>This project delivers timely and comprehensive news coverage, offering readers up-to-date
+                            information on global and local events with ease of access and reliable reporting.</p>
                     </div>
                 </div>
             </div>
@@ -365,7 +374,8 @@
                     <input id="inputsubject" type="text" placeholder="Enter your subject" required>
                 </div>
                 <div class="massage">
-                    <textarea name="text" id="massage" cols="30" rows="5" placeholder="Enter your massage" required></textarea>
+                    <textarea name="text" id="massage" cols="30" rows="5" placeholder="Enter your massage"
+                        required></textarea>
                 </div>
                 <button class="table-btn">Send Massage</button>
             </form>
@@ -407,6 +417,7 @@
         integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
+    <script src="./animation.js"> </script>
 </body>
 
 </html>

@@ -22,33 +22,37 @@ body {
 }
 
 .myheader {
-    display: none;
-}
-
-
-.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    height: 60px;
+    background-color: rgb(11, 206, 175);
+    display: none;
 }
 
-.mynav {
-    padding: 20px;
+.myheader li{
+    list-style-type: none;
+}
+.myheader li a{
+    padding: 0px 25px;
     font-family: "Roboto", sans-serif;
     font-size: large;
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
-    color: rgb(2, 2, 32);
-    background-color: aqua;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 .myloading {
     position: absolute;
-    height: 100vh;
+    height:100%;
     width: 100%;
     background: #ffffff;
-    z-index: 99;
     display: flex;
     justify-content: center;
 }
@@ -156,25 +160,19 @@ a {
 }
 
 #download-resume {
-    z-index: 100;
     margin-top: 40px;
+    font-size: 20px;
     border: 2px solid white;
     border-radius: 50px;
-}
-
-.right button {
-    height: 50px;
-    width: 150px;
-    border: none;
-    border-radius: 50px;
-    font-size: large;
-    background-color: transparent;
+    text-decoration: none;
     color: white;
-    cursor: pointer;
+    padding: 12px 20px;
+    position: relative;
+    z-index: 15;
 }
 
-#download-resume :hover {
-    background: rgb(14, 215, 182);
+#download-resume:hover {
+    background-color: rgb(14, 215, 182);
 }
 
 @media screen and (max-width:640px) {
