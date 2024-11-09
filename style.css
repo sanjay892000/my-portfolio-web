@@ -1,10 +1,18 @@
+:root {
+    --bgGreen: rgb(11, 206, 175);
+    --strokeColor: rgb(211, 211, 211);
+    --borderInput: #6c757d;
+    --placeholderTextColor: #343a40;
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     letter-spacing: 1;
     font-family: "Roboto", sans-serif;
-    line-height: 1.3;
+    line-height: 1.5;
 }
 
 html,
@@ -13,12 +21,22 @@ body {
     max-width: 100%;
     background-color: rgb(255, 255, 255);
     -webkit-text-size-adjust: 100%;
-
 }
 
 .main-tag {
-    position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#home-nav{
+position: relative;
+}
+
+#home-nav video{
+    opacity: 0.2;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
 }
 
 .myheader {
@@ -31,14 +49,16 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    background-color: rgb(11, 206, 175);
+    background-color: var(--bgGreen);
+    z-index: 1;
     display: none;
 }
 
-.myheader li{
+.myheader li {
     list-style-type: none;
 }
-.myheader li a{
+
+.myheader li a {
     padding: 0px 25px;
     font-family: "Roboto", sans-serif;
     font-size: large;
@@ -50,11 +70,12 @@ body {
 
 .myloading {
     position: absolute;
-    height:100%;
+    height: 100vh;
     width: 100%;
     background: #ffffff;
     display: flex;
     justify-content: center;
+    z-index: 5;
 }
 
 .myloading img {
@@ -66,11 +87,12 @@ body {
 .photo-pro {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(11, 206, 175);
+    background-color: var(--bgGreen);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .left {
     height: 100%;
     width: 40vw;
@@ -123,14 +145,16 @@ a {
         justify-content: center;
         align-items: center;
     }
-    .right{
+
+    .right {
         align-items: center;
     }
+
     .right h1 {
         font-size: 60px;
         align-items: center;
     }
-    
+
     #left-img {
         width: 250px;
         height: 250px;
@@ -150,11 +174,8 @@ a {
     }
 
     .full-page {
-        margin: 40px 0px;
         flex-direction: column;
         align-items: center;
-    }.container {
-        margin: 40px 0px;
     }
 
 }
@@ -183,45 +204,39 @@ a {
     }
 }
 
+
+
+
 .stroke-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    text-align: center;
-    margin: 7% 0%;
+    padding: 50px 0px 25px 0px;
 }
 
-.about-heading {
+.stroke-heading h1 {
     font-size: 15vw;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px grey;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.2;
+    -webkit-text-stroke: 2px rgb(211, 211, 211);
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .stroke-heading h3 {
     position: absolute;
-    font-family: "Roboto", sans-serif;
-    font-size: 4vw;
-    color: rgb(11, 206, 175);
-    top: 7vw;
-    left: 36.7vw;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: var(--bgGreen);
+}
+
+@media screen and (max-width:640px) {
+    .stroke-heading h3 {
+        font-size: 4vw;
+    }
+
 }
 
 
-.stroke-heading-top {
-    position: relative;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.stroke-heading-top h3 {
-    position: absolute;
-    font-family: "Roboto", sans-serif;
-    font-size: 4vw;
-    color: rgb(11, 206, 175);
-    top: 7vw;
-    left: 39vw;
-}
 
 .portfolio {
     width: 100vw;
@@ -229,12 +244,12 @@ a {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding: 30px;
+    padding: 0px 30px;
 }
 
 
 .top-webdevel h1 {
-    color: #343a40;
+    color: var(--placeholderTextColor);
 }
 
 .colonm1 {
@@ -258,9 +273,8 @@ a {
     opacity: 1;
 }
 
-.top-webdevel{
+.top-webdevel {
     padding: 0PX 30px;
-    padding-top: 20px;
     text-align: center;
 }
 
@@ -272,7 +286,7 @@ a {
 
 .colonm2 p {
     margin-top: 18px;
-    color: #6c757d;
+    color: var(--borderInput);
     font-size: 16px;
     text-align: start;
 }
@@ -296,17 +310,17 @@ a {
     margin-top: 30px;
     height: 50px;
     width: 140px;
-    border-color: rgb(11, 206, 175);
+    border-color: var(--bgGreen);
     border-radius: 50px;
     font-size: large;
     background-color: transparent;
-    color: rgb(11, 206, 175);
+    color: var(--bgGreen);
     margin-left: 15px;
     cursor: pointer;
 }
 
 .table-btn:hover {
-    background-color: rgb(11, 206, 175);
+    background-color: var(--bgGreen);
     color: white;
 }
 
@@ -329,7 +343,8 @@ a {
         object-fit: cover;
         overflow: hidden;
     }
-    .table{
+
+    .table {
         margin-top: -25px;
         display: flex;
         flex-direction: column;
@@ -344,9 +359,11 @@ a {
         width: 80vw;
 
     }
-    .table{
+
+    .table {
         margin-top: 0px;
     }
+
     .colonm2 {
         padding: 0px;
         margin-top: 10px;
@@ -361,10 +378,6 @@ a {
         width: 90vw;
     }
 
-    .text-heading {
-        font-size: 24px;
-    }
-    
 
     .table-right {
         margin-top: -10px;
@@ -385,35 +398,6 @@ a {
 
 }
 
-
-
-.stroke-heading-large {
-    position: relative;
-    margin-top: 7%;
-    margin-bottom: 7%;
-    text-align: center;
-}
-
-.quality-heading {
-    text-align: center;
-    font-size: 15vw;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px grey;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.2;
-}
-
-.stroke-heading-large h3 {
-    position: absolute;
-    top: 8vw;
-    left: 29.2vw;
-    font-family: "Roboto", sans-serif;
-    font-size: 3vw;
-    color: rgb(11, 206, 175);
-    align-items: center;
-}
-
 .full-page {
     height: auto;
     width: 100%;
@@ -430,25 +414,16 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 30px;
+    row-gap: 20px;
     font-family: "Roboto", sans-serif;
 }
 
-.text-heading {
-    color: #343a40;
-}
 
 .education h4,
 p {
-    color: #6c757d;
+    color: var(--borderInput);
     font-size: 16px;
     margin-top: 10px;
-}
-
-.text-sub-heading {
-    font-size: 20px;
-    margin-top: 25px;
-    color: #343a40;
 }
 
 @media screen and (max-width:640px) {
@@ -467,23 +442,13 @@ p {
 
 .experience h4,
 p {
-    color: #6c757d;
+    color: var(--borderInput);
     font-size: 16px;
     margin-top: 10px;
 }
 
-.skills-heading {
-    text-align: center;
-    font-size: 15vw;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: 2px grey;
-    font-family: Arial, Helvetica, sans-serif;
-    opacity: 0.2;
-}
 
 .myskills {
-    margin: 30px 0px;
     display: flex;
     flex-direction: column;
 }
@@ -503,9 +468,10 @@ p {
 .right-side {
     height: 100%;
     width: 40%;
+    row-gap: 20px;
     font-size: 30px;
     font-family: "Roboto", sans-serif;
-    color: #343a40;
+    color: var(--placeholderTextColor);
     display: flex;
     flex-direction: column;
 }
@@ -515,15 +481,15 @@ p {
 .left-side input {
     width: 100%;
     font-family: "Roboto", sans-serif;
-    color: #6c757d;
+    color: var(--borderInput);
 
 }
 
 .right-side input {
     width: 100%;
     font-family: "Roboto", sans-serif;
-    color: #6c757d;
-    background-color: #6c757d;
+    color: var(--borderInput);
+    background-color: var(--borderInput);
 
 }
 
@@ -535,24 +501,10 @@ p {
     }
 }
 
-.stroke-heading-medium {
-    position: relative;
-    text-align: center;
-    margin: 7% 0%;
-}
 
-.stroke-heading-medium h3 {
-    position: absolute;
-    font-family: "Roboto", sans-serif;
-    font-size: 5vw;
-    color: rgb(11, 206, 175);
-    top: 6.3vw;
-    left: 32.7vw;
-}
 
 .project {
     display: flex;
-    margin-bottom: 30px;
 }
 
 .project img {
@@ -566,9 +518,11 @@ p {
         display: flex;
         flex-direction: column;
     }
+
     .project-details {
         margin: 10px 0px;
     }
+
     .project img {
         width: 100%;
         height: auto;
@@ -611,11 +565,7 @@ p {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.personal-logo {
-    margin: 40px 0px;
-
+    row-gap: 40px;
 }
 
 .personal-logo p {
@@ -635,7 +585,7 @@ p {
 
 .service-logo h5 {
     font-size: 25px;
-    color: #343a40;
+    color: var(--placeholderTextColor);
     padding: 20px;
 }
 
@@ -653,7 +603,7 @@ p {
     height: 80px;
     width: 80px;
     border-radius: 50px;
-    background: rgb(11, 206, 175);
+    background: var(--bgGreen);
     position: absolute;
     z-index: -1;
     top: -4px;
@@ -667,7 +617,7 @@ p {
     height: 80px;
     width: 80px;
     border-radius: 50px;
-    background: rgb(11, 206, 175);
+    background: var(--bgGreen);
     position: absolute;
     z-index: -1;
     top: -4px;
@@ -681,7 +631,7 @@ p {
     height: 80px;
     width: 80px;
     border-radius: 50px;
-    background: rgb(11, 206, 175);
+    background: var(--bgGreen);
     position: absolute;
     z-index: -1;
     top: -4px;
@@ -695,7 +645,7 @@ p {
     height: 80px;
     width: 80px;
     border-radius: 50px;
-    background: rgb(11, 206, 175);
+    background: var(--bgGreen);
     position: absolute;
     z-index: -1;
     top: -4px;
@@ -714,10 +664,6 @@ p {
 
 .project-details p {
     font-size: 16px;
-}
-
-.service-details {
-    margin-bottom: 50px;
 }
 
 .myport {
@@ -803,10 +749,10 @@ p {
     width: 26vw;
     border-radius: 50px;
     margin: 10px;
-    border: 1px solid #6c757d;
+    border: 1px solid var(--borderInput);
     font-size: 1rem;
     background-color: transparent;
-    color: #343a40;
+    color: var(--placeholderTextColor);
     padding-left: 20px;
     outline: none;
 }
@@ -816,10 +762,10 @@ p {
     width: 54vw;
     border-radius: 50px;
     margin: 10px;
-    border: 1px solid #6c757d;
+    border: 1px solid var(--borderInput);
     font-size: large;
     background-color: transparent;
-    color: #343a40;
+    color: var(--placeholderTextColor);
     padding-left: 20px;
     font-size: 1rem;
     outline: none;
@@ -829,10 +775,10 @@ p {
     width: 54vw;
     border-radius: 10px;
     margin: 10px;
-    border: 1px solid #6c757d;
+    border: 1px solid var(--borderInput);
     font-size: large;
     background-color: transparent;
-    color: #343a40;
+    color: var(--placeholderTextColor);
     padding-left: 20px;
     padding-top: 10px;
     outline: none;
@@ -861,13 +807,13 @@ p {
         border-radius: 3px;
         width: 75vw;
     }
-    
+
 }
 
 
 .myfooter {
     margin-top: 50px;
-    background: rgb(11, 206, 175);
+    background: var(--bgGreen);
     width: 100%;
     height: 300px;
     padding: 40px;
@@ -898,7 +844,7 @@ p {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #343a40;
+    color: var(--placeholderTextColor);
 }
 
 .terms-cond {

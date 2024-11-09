@@ -28,13 +28,10 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
-
 var timeline = gsap.timeline();
 timeline.to(".myloading , .myloading img", {
-
   opacity: 0,
-  duration: 1.5,
-  delay: 0.5
+  duration: 1.5
 })
 
 
@@ -51,3 +48,4 @@ timeline.from(".right h4 , .right h1 , .right h6 , .right a", {
   stagger: 0.2
 
 })
+
